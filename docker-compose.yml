@@ -1,0 +1,14 @@
+version: "3.6"
+
+services:
+  
+  trainer:
+    volumes:
+      - data:/mnt/
+    ports:
+      - 8501:8501
+    build:
+      context: .
+  
+volumes:
+  data:
